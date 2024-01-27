@@ -1,0 +1,261 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #11071f;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 0%;
+    max-height: auto;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(35, 14, 41, 0)
+    );
+    /* Adjust padding based on your design */
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    transition: top 0.3s; /* Add smooth transition for hiding and showing */
+}
+
+/* ... (other styles remain unchanged) */
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background-color: transparent;
+}
+
+.top-nav li {
+    margin-right: 20px;
+    display: inline-flex;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s; /* Change transition property to 'color' */
+}
+
+.top-nav a:hover {
+    background-color: #11071f;
+    color: hotpink; /* Change the color to hot pink */
+    text-transform: uppercase; /* Added text transformation */
+}
+
+.skll{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+
+.skillset{
+   color: #4419c4;
+   
+}
+
+
+.grid-container-1 {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: #4419c4;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(3, minmax(0, 1fr)); 
+    padding: 0px;
+    max-width: 70%;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
+
+    
+  }
+
+  .grid-item {
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    background-color: #11071f;
+    border: 1px solid rgba(200,137,230,.637);
+    box-shadow:0 0 10px 0px #4419c4;
+    padding: 30px;
+    font-size: 30px;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .grid-item:hover {
+    background-color: #4419c4; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.grid-item img {
+    width: 90px;
+    height: auto; /* Maintain aspect ratio */
+    filter: brightness(0) invert(1);
+}
+
+h1{
+    font-size: 1.2cm;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+body.show-footer .footer {
+    display: block;
+}
+
+.footer {
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    /* Remove position: fixed; */
+    /* Remove bottom: 0; */
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Adjust padding based on your design */
+    background-color: #301262;
+    opacity: 0.8; /* Adjust opacity based on your design */
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(35, 14, 41, 0)
+    );
+    backdrop-filter: blur(10px);
+    min-height: auto;
+    padding-top: 30px;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Show the footer when the page is scrolled to the bottom */
+body.show-footer .footer {
+    display: block;
+}
+
+
+
+/* Specify the color for the scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4419c4;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #11071f; /* Set the color of the track (the area behind the thumb) */
+}
+
+{
+    scrollbar-color #4419c4 #f1f1f1; /* Set the color of the thumb and track */
+    scrollbar-width thin; /* Set the width of the scrollbar */
+}   
+
+.social-icons{
+    color:white;
+}
+
+.tools{
+    color: #4419c4;
+}
+
+h2{
+    font-size:1.2cm;
+}
+
+h3{
+    font-size: 1.2cm;
+    padding-top: 50px;
+}
+.projects{
+    color: #4419c4;
+}
+
+.grid-container-2 {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: #4419c4;
+    grid-template-columns: repeat(3, 1fr); 
+    
+    padding: 0px;
+    max-width: 70%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.grid-container-3 {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: #4419c4;
+    grid-template-columns: repeat(3, 1fr); 
+    
+    padding: 0px;
+    max-width: 70%;
+    text-align: center;
+    padding-top: 20px;
+}
+.grid-item img {
+    width: 90px;
+    height: auto; /* Maintain aspect ratio */
+    filter: brightness(0) invert(1);
+}

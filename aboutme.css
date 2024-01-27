@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #11071f;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 0%;
+    max-height: 100vh;
+     
+    
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(35, 14, 41, 0)
+    );
+    /* Adjust padding based on your design */
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    transition: top 0.3s; /* Add smooth transition for hiding and showing */
+}
+
+.astro {
+    padding: 40px;
+    display: flex;
+}
+
+.img {
+    position: relative;
+    margin-left: 60%;
+    top: 10px;
+    margin-right: 20px;
+}
+
+.aboutme {
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 20px;   
+    bottom: 550px;    
+    max-width: 800px;
+    padding-left: 40px;
+}
+
+ul.a {
+    list-style-type: disc;
+}
+
+.aboutme {
+    text-align: center;
+    position: relative;
+    width: 40%;
+    padding: 50px;
+}
+
+.name {
+    color: #28a745;
+}
+
+.About {
+    color: #cd5ff8; 
+}
+
+.all{
+    text-align: left;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background-color: transparent;
+}
+
+.top-nav li {
+    margin-right: 20px;
+    display: inline-flex;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s; /* Change transition property to 'color' */
+}
+
+.top-nav a:hover {
+    background-color: #11071f;
+    color: hotpink; /* Change the color to hot pink */
+    text-transform: uppercase; /* Added text transformation */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.footer {
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    /* Remove position: fixed; */
+    /* Remove bottom: 0; */
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Adjust padding based on your design */
+    background-color: #301262;
+    opacity: 0.8; /* Adjust opacity based on your design */
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(35, 14, 41, 0)
+    );
+    backdrop-filter: blur(10px);
+    min-height: auto;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Show the footer when the page is scrolled to the bottom */
+body.show-footer .footer {
+    display: block;
+}
+
+.social-icons{
+    color:white;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4419c4;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #11071f; /* Set the color of the track (the area behind the thumb) */
+}
+
+/* Set the color of the thumb and track */
+scrollbar-color: #4419c4 #f1f1f1;
+scrollbar-width: thin; /* Set the width of the scrollbar */
