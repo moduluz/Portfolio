@@ -105,7 +105,7 @@ body {
 .animatedText {
     position: relative;
     top: 200px;
-    left: -70px; /* Adjust this value to align with the other elements */
+    left: -50px; /* Adjust this value to align with the other elements */
     Color: #28a745;
     
     text-align: left;
